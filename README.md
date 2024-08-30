@@ -2,6 +2,10 @@
 
 This repository contains a Todo List application built using the MERN stack. The application allows users to create, update, delete, and manage their tasks efficiently. The app is fully responsive, working seamlessly across all devices.
 
+## To see the application live, visit the hosted URL:
+
+**Live Demo**: ```https://todo-list-assignment-mern-client-iml6mg5nw.vercel.app```
+
 ## Table of Contents
 
 - [Features](#features)
