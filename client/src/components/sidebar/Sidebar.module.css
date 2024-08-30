@@ -1,0 +1,123 @@
+.userProfileContainer {
+    width: 200px;
+    height: 100vh;
+    left:0px;
+    top: 0;
+    background-color: #1a1a2e;
+    color: #f5f5f5;
+    padding: 20px;
+    transition: right 0.4s ease-in-out;
+    z-index: 1000;
+    /* box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.2); */
+    overflow-y: auto;
+    position: sticky;
+    background-color: #f5f5f5;
+}
+
+.userProfileContainer::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* .userProfileContainer.showProfile {
+    right: 0;
+} */
+
+/* .userProfileContainer.hideProfile {
+    right: -270px;
+} */
+
+.profileHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profileImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #f5f5f5;
+    margin-bottom: 10px;
+    border: 3px solid #868282;
+}
+
+.userName {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1a1a2e;
+}
+
+.profileMenu {
+    list-style: none;
+    padding: 0;
+}
+
+.profileMenu li {
+    margin: 15px 0;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    color: #1a1a2e;
+}
+
+.profileMenu li .icons{
+    font-size: 17px;
+}
+
+.profileMenu li i {
+    margin-right: 10px;
+}
+
+.icons{
+    margin-right: 10px;
+   
+}
+
+.profileMenu li a{
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #1a1a2e;
+}
+
+.profileMenu li a:hover{
+    color: #00ff31;
+}
+
+.profileMenu li:hover {
+    color: #00ff31;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f5f5f5;
+    display: none;
+    color: #1a1a2e;
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .userProfileContainer {
+        position: absolute;
+        left: -200px;
+        top: 0;
+        transition: 0.4s ease-in-out;
+    }
+
+    .userProfileContainer.showProfile {
+        left: 0;
+        transition: 0.4s ease-in-out;
+    }
+
+    .closeBtn{
+        display: block;
+    }
+}

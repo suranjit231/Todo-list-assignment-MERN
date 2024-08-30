@@ -1,0 +1,139 @@
+.signupFormContainer {
+    width: 100%;
+    height: calc(100vh - 48px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .authForm {
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  }
+  
+  .authForm h2 {
+    color: gray;
+  }
+  
+  .formControl {
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .defaultInput {
+    flex: 1;
+    padding: 7px 12px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: gray;
+    outline: none;
+  }
+  
+  /* .defaultInput:focus {
+    border: 1.2px solid red;
+    color: red;
+  }
+   */
+  .successInput {
+    flex: 1;
+    padding: 7px 12px;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: green;
+    outline: none;
+  }
+  
+  .errorInput {
+    width: 100%;
+    padding: 7px 12px;
+    border: 1px solid red;
+    border-radius: 4px;
+    color: red;
+    outline: none;
+
+  }
+  
+  .errorText {
+    color: red;
+    font-size: 12px;
+  }
+  
+  .formLabel {
+    font-size: 20px;
+    color: gray;
+  }
+  
+  .formControl.passwordContainer {
+    position: relative;
+  }
+  
+  .passwordControl {
+    position: absolute;
+    right: 10px;
+  }
+  
+  .formSubmitBtn {
+    width: 100%;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: #f0f8ff;
+    background-color: rgba(128, 128, 128, 0.932);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+  }
+  
+
+
+  .activeSubmitBtn {
+    background-color: rgb(61, 61, 61);
+    color: #fff;
+  }
+
+  .activeSubmitBtn:active{
+    transform: scale(0.85);
+  }
+
+  .loginFormBtn:hover{
+    background-color: rgb(61, 61, 61);
+    color: #fff;
+  }
+
+  .loginFormBtn:active{
+    transform: scale(0.85);
+  }
+
+
+  
+  .formRedirectionBtn {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(80, 79, 79);
+  }
+  
+  .formRedirectionBtn span {
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 7px;
+    color: #0000ff;
+    cursor: pointer;
+  }
+  
