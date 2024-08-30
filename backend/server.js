@@ -18,7 +18,8 @@ const app = express();
 //======== setup middleware for request data parsing ==========//
 //======== setup middleware for request data parsing ==========//
 app.use(cors({
-    origin: 'https://todo-list-assignment-mern-client.vercel.app',
+    origin: 'https://todo-list-assignment-mern-client-iml6mg5nw.vercel.app',
+    
     credentials: true
 }));
 
